@@ -1,21 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Form Sederhana</title>
-<link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Form Sederhana</title>
+    <link rel="icon" type="image/png" href="gambar/icon.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-<form action="/action_page.php">
-<label for="depan">Nama depan: </label><br>
-<input type="text" id="depan" name="i_name" value="Budi"><br>
-<label for="n_belakang">Nama Belakang:</label><br>
-<input type="text" id="n_belakang" name="i_belakan" value="Prawira"><br><br>
-<input type="submit" value="Kirim">
-<input type="reset" value="Reset">
-</form>
-<p>Jika Anda mengklik tombol "Kirim", data formulir akan dikirim ke halaman bernana "/action_page.php".</p>
-<p> <!-- Kesimpulan Ujicoba Disini --> </p>
+    <form action="/action_page.php" method="post">
+        <label for="depan">Nama Depan:</label><br>
+        <input type="text" id="depan" name="nama_depan" value="Budi"><br>
+
+        <label for="n_belakang">Nama Belakang: </label><br>
+        <input type="text" id="n_belakang" name="nama_belakang" value="Prawira"><br><br>
+
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Reset">
+    </form>
+
+    <p>Jika Anda mengklik tombol "Kirim", data formulir akan dikirim ke halaman bernama "/action_page.php".</p>
+
+    <p><strong>Kesimpulan Ujicoba</strong></p>
+    <ul>
+        <li>Tombol "Reset" berfungsi untuk menghapus data yang telah dimasukkan di kolom input teks.</li>
+        <li>Tombol "Kirim" berfungsi untuk mengirim data yang telah dimasukkan di kolom input teks ke halaman tujuan.</li>
+        <li>Atribut `target` pada tag menentukan di mana halaman tujuan akan dibuka.</li>
+        <li>Atribut `method` pada tag menentukan cara data formulir akan dikirim ke halaman tujuan.</li>
+    </ul>
 </body>
 </html>
